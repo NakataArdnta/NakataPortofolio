@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nakata Ardinata | Personal Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio profesional Nakata Ardinata. Menampilkan profil, minat teknologi, skill, project, dan perjalanan belajar pemrograman."
+    />
+    <meta name="author" content="Nakata Ardinata" />
+    <meta property="og:title" content="Nakata Ardinata | Personal Portfolio" />
+    <meta
+      property="og:description"
+      content="Exploring Technology, Building Ideas. Personal portfolio profesional Nakata Ardinata."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts untuk Tipografi Modern & Bersih -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet Utama Murni CSS3 -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Efek Pendar Cahaya Ambient Halus -->
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <!-- 1. NAVBAR STICKY -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <!-- Logo / Brand -->
+        <a href="#home" class="logo" aria-label="Nakata Ardinata Beranda">
+          <span id="logo-text">Nakata</span><span class="logo-accent">.</span>
+        </a>
+
+        <!-- Menu Navigasi Desktop -->
+        <nav aria-label="Navigasi Utama">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Aksi Navbar: Switcher Tema & Menu Mobile -->
+        <div class="nav-actions">
+          <button
+            id="theme-toggle-btn"
+            class="theme-btn"
+            type="button"
+            aria-label="Ganti tema tampilan"
+            title="Ganti Tema"
+          >
+            <!-- Ikon SVG disisipkan dinamis oleh script.js -->
+          </button>
+
+          <button
+            id="hamburger-btn"
+            class="hamburger-btn"
+            type="button"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Drawer Navigasi Mobile -->
+      <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. HERO SECTION / BERANDA -->
+      <section class="hero-section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-content fade-in-up">
+            <div class="hero-badge">
+              <span class="status-dot"></span>
+              <span id="status-badge-text">Open to Collaborate &amp; Learn</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span id="hero-name" class="hero-name-gradient">Nakata Ardinata</span>
+            </h1>
+
+            <p class="hero-tagline" id="hero-tagline">
+              Exploring Technology, Building Ideas.
+            </p>
+
+            <p class="hero-subtitle" id="hero-subtitle">
+              Tertarik pada web development, pemrograman modern, dan eksplorasi proyek digital
+              untuk menciptakan solusi yang bermanfaat.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#about" class="btn btn-primary">
+                Kenali Saya
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                Lihat Project
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Foto Profil / Avatar -->
+          <div class="hero-visual fade-in-up delay-1">
+            <div class="avatar-card">
+              <div class="avatar-wrapper">
+                <img
+                  id="hero-avatar-img"
+                  class="avatar-img"
+                  src="assets/profile.svg"
+                  alt="Foto Profil Nakata Ardinata"
+                  loading="eager"
+                  width="340"
+                  height="340"
+                />
+              </div>
+              <div class="avatar-caption">
+                <span class="avatar-caption-tag">
+                  <span class="status-dot"></span> Online &amp; Exploring
+                </span>
+                <span>Portofolio 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ABOUT ME SECTION -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Perkenalan</span>
+            <h2 class="section-title">Tentang Saya</h2>
+            <p class="section-subtitle">
+              Dedikasi untuk belajar secara konsisten dan membangun solusi berbasis teknologi.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="about-text" id="about-text-container">
+                <!-- Paragraf deskripsi tentang diri disuntikkan dari config.js -->
+              </div>
+            </div>
+
+            <div class="facts-grid" id="about-facts-container">
+              <!-- Kartu ringkasan fakta/profil disuntikkan dari config.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SKILLS SECTION -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Kemampuan &amp; Pembelajaran</span>
+            <h2 class="section-title">Keahlian &amp; Eksplorasi</h2>
+            <p class="section-subtitle">
+              Teknologi yang sedang saya pelajari dan gunakan dalam berbagai proyek eksperimen.
+            </p>
+          </div>
+
+          <div class="skills-grid" id="skills-grid-container">
+            <!-- Kartu keahlian disuntikkan dari config.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PROJECTS SECTION -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Portofolio Karya</span>
+            <h2 class="section-title">Projek Pilihan</h2>
+            <p class="section-subtitle">
+              Koleksi project eksplorasi dan aplikasi yang pernah saya rancang dan bangun.
+            </p>
+          </div>
+
+          <div class="projects-grid" id="projects-grid-container">
+            <!-- Kartu projek disuntikkan dari config.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CONTACT SECTION -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-content">
+              <span class="section-badge">Mari Terhubung</span>
+              <h2 class="section-title">Hubungi Saya</h2>
+              <p class="contact-desc" id="contact-desc">
+                Tertarik untuk berdiskusi, berbagi ide, atau berkolaborasi dalam proyek pemrograman?
+                Silakan hubungi saya melalui email atau media sosial.
+              </p>
+
+              <!-- Kotak Email dengan Tombol Salin -->
+              <div class="contact-email-box">
+                <span class="contact-email-text" id="contact-email-text">
+                  valencianakata1447@gmail.com
+                </span>
+                <button
+                  id="copy-email-btn"
+                  class="copy-btn"
+                  type="button"
+                  aria-label="Salin alamat email ke papan klip"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                  </svg>
+                  Salin Email
+                </button>
+              </div>
+
+              <!-- Tombol Kontak Langsung & Media Sosial -->
+              <div class="contact-cta-buttons">
+                <a
+                  id="contact-mailto-btn"
+                  href="mailto:valencianakata1447@gmail.com"
+                  class="btn btn-primary"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  Kirim Pesan Langsung
+                </a>
+              </div>
+
+              <ul class="socials-list" id="socials-container">
+                <!-- Tautan sosial media disuntikkan dari config.js -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 7. FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <p id="footer-copyright">© 2026 Nakata Ardinata. All rights reserved.</p>
+          <p id="footer-caption" class="caption-text"></p>
+        </div>
+
+        <button
+          id="back-to-top-btn"
+          class="back-to-top-btn"
+          type="button"
+          aria-label="Kembali ke bagian paling atas halaman"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m18 15-6-6-6 6" />
+          </svg>
+          Kembali ke Atas
+        </button>
+      </div>
+    </footer>
+
+    <!-- Skrip Konfigurasi dan Interaksi Vanilla JavaScript -->
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

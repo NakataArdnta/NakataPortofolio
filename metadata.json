@@ -1,0 +1,6 @@
+{
+  "name": "Nakata Ardinata - Personal Portfolio",
+  "description": "Website personal portfolio profesional untuk Nakata Ardinata. Menampilkan profil, minat teknologi, skill, project, tema dark/light, dan konfigurasi fleksibel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
