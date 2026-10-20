@@ -17,21 +17,21 @@ window.PORTFOLIO_CONFIG = {
   // 1. IDENTITAS DIRI & PENGATURAN UMUM
   // ------------------------------------------------------------------
   personal: {
-    name: "Nakata Ardinata",
+    name: "Valencia Nakata Ardinata",
     username: "Nakata",
     role: "Tech Enthusiast & Aspiring Developer",
     location: "Indonesia",
     statusBadge: "Open to Collaborate & Learn",
     
     // Tagline utama di halaman Hero
-    tagline: "Exploring Technology, Building Ideas.",
+    tagline: "Mencoba mencari tau tentang bagaimana dunia bekerja?.",
     
     // Subtitle pengantar di bawah tagline (bisa kamu edit sesuka hati)
     subtitle: "Tertarik pada web development, pemrograman modern, dan eksplorasi proyek digital untuk menciptakan solusi yang bermanfaat.",
     
     // Foto profil: bisa berupa path file lokal di folder assets/
     // Contoh: "assets/profile.svg" atau jika punya foto sendiri: "assets/profile.jpg"
-    avatarUrl: "assets/profile.svg",
+    avatarUrl: "assets/profile.jpg",
     
     // Inisial jika gambar gagal dimuat
     avatarInitials: "NA",
@@ -71,9 +71,9 @@ window.PORTFOLIO_CONFIG = {
 
     // Kartu informasi cepat yang bisa diedit
     quickFacts: [
-      { label: "Nama Lengkap", value: "Nakata Ardinata" },
+      { label: "Nama Lengkap", value: "Valencia Nakata Ardinata" },
       { label: "Nama Panggilan", value: "Nakata" },
-      { label: "Status", value: "Pelajar / Tech Enthusiast" },
+      { label: "Status", value: "Pelajar / Mahasiswa" },
       { label: "Domisili", value: "Indonesia" },
       { label: "Fokus Utama", value: "Web Development & Pemrograman" },
       { label: "Minat", value: "Frontend, Automation, Problem Solving" }
@@ -86,18 +86,6 @@ window.PORTFOLIO_CONFIG = {
   // Catatan: Tidak menggunakan progress bar persentase buatan.
   // Cukup sebutkan kategori dan fokus kemampuanmu secara jujur.
   skills: [
-    {
-      name: "HTML5",
-      category: "Frontend",
-      note: "Struktur semantik, aksesibilitas dasar & SEO",
-      icon: "code"
-    },
-    {
-      name: "CSS3",
-      category: "Frontend",
-      note: "Responsive layout, Flexbox, Grid, & animasi CSS",
-      icon: "palette"
-    },
     {
       name: "JavaScript",
       category: "Programming",
@@ -134,7 +122,7 @@ window.PORTFOLIO_CONFIG = {
       id: "personal-portfolio",
       title: "Personal Portfolio Website",
       description: "Website portfolio profesional yang dibangun dengan vanilla HTML, CSS murni, dan JavaScript. Dilengkapi tema dark/light mode dan sistem konfigurasi terpusat.",
-      tags: ["HTML5", "CSS3", "JavaScript", "Responsive"],
+      tags: ["JavaScript", "Responsive"],
       demoUrl: "#home", // mengarah ke halaman ini sendiri
       sourceUrl: "",   // kosongkan jika repo belum dipublikasikan
       status: "Selesai"
@@ -165,10 +153,10 @@ window.PORTFOLIO_CONFIG = {
   // Isi dengan akun atau URL milikmu. Kosongkan ("") jika belum ada.
   contact: {
     email: "valencianakata1447@gmail.com",
-    github: "https://github.com",
-    instagram: "",
+    github: "https://github.com/NakataArdnta",
+    instagram: "nakataa1.a",
     linkedin: "",
-    message: "Tertarik untuk berdiskusi, berbagi ide, atau berkolaborasi dalam proyek pemrograman? Silakan hubungi saya melalui email atau media sosial."
+    message: "Pengen kenalan lebih lanjut lagi tentang saya? Silakan hubungi saya melalui email atau media sosial."
   },
 
   // ------------------------------------------------------------------
@@ -176,6 +164,6 @@ window.PORTFOLIO_CONFIG = {
   // ------------------------------------------------------------------
   footer: {
     copyrightName: "Nakata Ardinata",
-    caption: "Dibuat dengan HTML5, CSS3 murni & Vanilla JavaScript."
+    caption: "Dibuat dengan HTML5, CSS3 & Vanilla JavaScript."
   }
 };
